@@ -6,5 +6,5 @@ snippet: "Learn practical strategies for launching digital products, building an
 image:
   src: "https://unsplash.com"
   alt: "Digital product laptop illustration"
-paymentLink: "YOUR_ACTUAL_CHECKOUT_URL_HERE"
+paymentLink: "https://payhip.com/b/4QgJm"
 ---

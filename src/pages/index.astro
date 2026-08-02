@@ -1,36 +1,48 @@
----
-// Clean, unconventional layout configuration
-const storeName = "DOWNLOADOLOGY";
-const ebookTitle = "Make First $100 on the Web";
-const ebookPrice = "$4.99";
-const payhipProductKey = "4QgJm"; 
----
-<!-- PAYHIP EMBED SCRIPT -->
-<script type="text/javascript" src="https://payhip.com" defer></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOWNLOADOLOGY - Digital Store</title>
+    
+    <!-- PAYHIP SECURE MODAL SCRIPT -->
+    <script type="text/javascript" src="https://payhip.com" defer></script>
 
-<div class="store-container">
-    <h1>{storeName}</h1>
-    <p class="subtitle">Premium digital assets, blueprints, and resources delivered instantly.</p>
+    <style>
+        body { font-family: system-ui, sans-serif; background-color: #0f172a; color: #f8fafc; margin: 0; padding: 40px 20px; display: flex; justify-content: center; align-items: center; min-height: 80vh; }
+        .store-container { text-align: center; max-width: 600px; width: 100%; }
+        h1 { color: #34d399; font-size: 2.5rem; margin-bottom: 10px; letter-spacing: 1px; }
+        .subtitle { color: #94a3b8; font-size: 1.1rem; margin-bottom: 40px; }
+        .product-card { background-color: #1e293b; border: 1px solid #334155; border-radius: 16px; padding: 30px; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3); }
+        h2 { font-size: 1.8rem; margin: 0 0 15px 0; color: #f1f5f9; }
+        .description { color: #cbd5e1; font-size: 1rem; line-height: 1.6; margin-bottom: 20px; }
+        .price { font-size: 1.5rem; font-weight: bold; color: #34d399; margin-bottom: 25px; }
+        .payhip-buy-button { display: inline-block; background-color: #10b981; color: #ffffff; text-decoration: none; padding: 14px 32px; font-weight: bold; border-radius: 8px; font-size: 1.1rem; transition: background-color 0.2s ease; border: none; cursor: pointer; }
+        .payhip-buy-button:hover { background-color: #059669; }
+    </style>
+</head>
+<body>
 
-    <div class="product-card">
-        <h2>{ebookTitle}</h2>
-        <p class="description">Stop overcomplicating online business. Discover the clear, actionable structural strategies required to build your audience, launch simple assets, and generate your very first $100 payout directly from your web projects.</p>
-        <div class="price">{ebookPrice}</div>
-        
-        <!-- PERFECTLY FORMATTED CHKOUT LINK WITH YOUR TRUE KEY -->
-        <a href={`https://payhip.com{payhipProductKey}`} class="payhip-buy-button" data-theme="none">Buy Ebook Now</a>
+    <div class="store-container">
+        <h1>DOWNLOADOLOGY</h1>
+        <p class="subtitle">Premium digital assets, blueprints, and resources delivered instantly.</p>
+
+        <div class="product-card">
+            <h2>Make First $100 on the Web</h2>
+            <p class="description">Stop overcomplicating online business. Discover the clear, actionable structural strategies required to build your audience, launch simple assets, and generate your very first $100 payout directly from your web projects.</p>
+            <div class="price">$4.99</div>
+            
+            <!-- SECURE CHECKOUT HOOK WITH YOUR EXACT CODE -->
+            <a 
+                href="https://payhip.com" 
+                class="payhip-buy-button" 
+                data-theme="none"
+                data-product="4QgJm"
+            >
+                Buy Ebook Now
+            </a>
+        </div>
     </div>
-</div>
 
-<style>
-    body { font-family: system-ui, sans-serif; background-color: #0f172a; color: #f8fafc; margin: 0; padding: 40px 20px; display: flex; justify-content: center; align-items: center; min-height: 80vh; }
-    .store-container { text-align: center; max-width: 600px; width: 100%; }
-    h1 { color: #34d399; font-size: 2.5rem; margin-bottom: 10px; letter-spacing: 1px; }
-    .subtitle { color: #94a3b8; font-size: 1.1rem; margin-bottom: 40px; }
-    .product-card { background-color: #1e293b; border: 1px solid #334155; border-radius: 16px; padding: 30px; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3); }
-    h2 { font-size: 1.8rem; margin: 0 0 15px 0; color: #f1f5f9; }
-    .description { color: #cbd5e1; font-size: 1rem; line-height: 1.6; margin-bottom: 20px; }
-    .price { font-size: 1.5rem; font-weight: bold; color: #34d399; margin-bottom: 25px; }
-    .payhip-buy-button { display: inline-block; background-color: #10b981; color: #ffffff; text-decoration: none; padding: 14px 32px; font-weight: bold; border-radius: 8px; font-size: 1.1rem; transition: background-color 0.2s ease; border: none; cursor: pointer; }
-    .payhip-buy-button:hover { background-color: #059669; }
-</style>
+</body>
+</html>

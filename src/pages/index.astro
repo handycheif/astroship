@@ -18,14 +18,15 @@ const payhipProductKey = "4QgJm";
         <div class="price">{ebookPrice}</div>
         
         <!-- FIXED: ADDED THE MANDATORY DATA-PRODUCT IDENTIFIER -->
-        <a 
-            href={`https://payhip.com{payhipProductKey}`} 
-            class="payhip-buy-button" 
-            data-theme="none"
-            data-product={payhipProductKey}
-        >
-            Buy Ebook Now
-        </a>
+        <!-- ADDED DIRECTLY INSIDE THE BUTTON LINK TAG -->
+<a 
+    href={`https://payhip.com{payhipProductKey}`} 
+    class="payhip-buy-button" 
+    data-theme="none"
+    data-product="4QgJm"
+>
+    Buy Ebook Now
+</a>
     </div>
 </div>
 

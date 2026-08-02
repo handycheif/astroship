@@ -6,112 +6,141 @@
 <title>DOWNLOADOLOGY - Digital Store</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#0f172a;
-    color:#fff;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-    padding:20px;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f172a;
+    color: #fff;
+    min-height: 100vh;
+    padding: 40px 20px;
 }
 
-.container{
-    max-width:650px;
-    width:100%;
+.header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
 }
 
-.card{
-    background:#1e293b;
-    border-radius:15px;
-    padding:40px;
-    text-align:center;
-    border:1px solid #334155;
-    box-shadow:0 10px 30px rgba(0,0,0,.4);
+h1 {
+    color: #34d399;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
 }
 
-h1{
-    color:#34d399;
-    margin-bottom:10px;
+.subtitle {
+    color: #94a3b8;
+    font-size: 1.2rem;
 }
 
-.subtitle{
-    color:#94a3b8;
-    margin-bottom:30px;
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-h2{
-    margin-bottom:15px;
+.card {
+    background: #1e293b;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #334155;
+    box-shadow: 0 10px 30px rgba(0,0,0,.3);
+    transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-.price{
-    color:#22c55e;
-    font-size:2rem;
-    font-weight:bold;
-    margin:20px 0;
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #10b981;
 }
 
-.description{
-    color:#cbd5e1;
-    line-height:1.7;
-    margin-bottom:30px;
+h2 {
+    font-size: 1.5rem;
+    color: #f8fafc;
+    margin-bottom: 15px;
+    line-height: 1.4;
 }
 
-.buy-button{
-    display:inline-block;
-    background:#10b981;
-    color:#fff;
-    text-decoration:none;
-    padding:16px 40px;
-    border-radius:8px;
-    font-size:18px;
-    font-weight:bold;
-    transition:.3s;
+.price {
+    color: #22c55e;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
-.buy-button:hover{
-    background:#059669;
+.description {
+    color: #cbd5e1;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.buy-button {
+    display: block;
+    text-align: center;
+    background: #10b981;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.buy-button:hover {
+    background: #059669;
 }
 </style>
 
 </head>
 <body>
 
-<div class="container">
-
-<div class="card">
-
-<h1>DOWNLOADOLOGY</h1>
-
-<p class="subtitle">
-Premium digital assets delivered instantly.
-</p>
-
-<h2>Make Your First $100 on the Web</h2>
-
-<div class="price">$4.99</div>
-
-<p class="description">
-Learn practical strategies for launching digital products,
-building an audience, and earning your first online income.
-</p>
-
-<a
-class="buy-button"
-href="https://payhip.com/buy?link=4QgJm"
-target="_blank"
-rel="noopener noreferrer">
-Buy Ebook Now
-</a>
-
+<div class="header">
+    <h1>DOWNLOADOLOGY</h1>
+    <p class="subtitle">Premium digital assets delivered instantly.</p>
 </div>
+
+<div class="products-grid">
+
+    <!-- PRODUCT 1 -->
+    <div class="card">
+        <div>
+            <h2>Make Your First $100 on the Web</h2>
+            <div class="price">$4.99</div>
+            <p class="description">
+                Learn practical strategies for launching digital products,
+                building an audience, and earning your first online income.
+            </p>
+        </div>
+        <a class="buy-button" href="https://payhip.com" target="_blank" rel="noopener noreferrer">
+            Buy Ebook Now
+        </a>
+    </div>
+
+    <!-- PRODUCT 2 (Whenever you are ready, just edit this text for your next item!) -->
+    <div class="card">
+        <div>
+            <h2>Your Second Product Name</h2>
+            <div class="price">$9.99</div>
+            <p class="description">
+                This is a placeholder description for your next awesome digital asset. You can change this text at any time.
+            </p>
+        </div>
+        <a class="buy-button" href="#" target="_blank" rel="noopener noreferrer">
+            Coming Soon
+        </a>
+    </div>
 
 </div>
 

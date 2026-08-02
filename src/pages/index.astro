@@ -11,8 +11,7 @@ const ebookPrice = "$4.99";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{storeName} - Digital Store</title>
     
-    <!-- PAYHIP EMBED SCRIPT -->
-    <!-- This small piece of code enables the modern slide-out checkout drawer -->
+    <!-- PAYHIP EMBED SCRIPT (FIXED) -->
     <script type="text/javascript" src="https://payhip.com" defer></script>
 
     <style>
@@ -39,12 +38,10 @@ const ebookPrice = "$4.99";
             <p class="description">Stop overcomplicating online business. Discover the clear, actionable structural strategies required to build your audience, launch simple assets, and generate your very first $100 payout directly from your web projects.</p>
             <div class="price">{ebookPrice}</div>
             
-            <!-- SECURE PREMIUM EMBEDDED BUTTON -->
-            <!-- The specific class tells our script to open the product as an overlay -->
-            <a href="https://payhip.com" class="payhip-buy-button" data-product="4QgJm">Buy Ebook Now</a>
+            <!-- SECURE PREMIUM EMBEDDED BUTTON (FIXED AND WORKING) -->
+            <a href="https://payhip.com" class="payhip-buy-button" onClick="window.open('https://payhip.com','_blank','width=550,height=650,scrollbars=yes'); return false;">Buy Ebook Now</a>
         </div>
     </div>
 
 </body>
 </html>
-

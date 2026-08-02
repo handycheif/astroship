@@ -4,86 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOWNLOADOLOGY - Digital Store</title>
+
     <style>
-        body {
-            font-family: system-ui, sans-serif;
-            background-color: #0f172a;
-            color: #f8fafc;
-            margin: 0;
-            padding: 40px 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 80vh;
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
         }
-        .store-container {
-            text-align: center;
-            max-width: 600px;
-            width: 100%;
+
+        body{
+            font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+            background:#0f172a;
+            color:#f8fafc;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+            padding:20px;
         }
-        h1 {
-            color: #34d399;
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+
+        .store-container{
+            width:100%;
+            max-width:650px;
         }
-        .subtitle {
-            color: #94a3b8;
-            font-size: 1.1rem;
-            margin-bottom: 40px;
+
+        h1{
+            text-align:center;
+            color:#34d399;
+            font-size:2.7rem;
+            margin-bottom:10px;
         }
-        .product-card {
-            background-color: #1e293b;
-            border: 1px solid #334155;
-            border-radius: 16px;
-            padding: 30px;
+
+        .subtitle{
+            text-align:center;
+            color:#94a3b8;
+            margin-bottom:35px;
+            font-size:1.1rem;
         }
-        h2 {
-            font-size: 1.8rem;
-            margin: 0 0 15px 0;
-            color: #f1f5f9;
+
+        .product-card{
+            background:#1e293b;
+            border:1px solid #334155;
+            border-radius:18px;
+            padding:35px;
+            text-align:center;
+            box-shadow:0 10px 25px rgba(0,0,0,.35);
         }
-        .description {
-            color: #cbd5e1;
-            font-size: 1rem;
-            line-height: 1.6;
-            margin-bottom: 20px;
+
+        .product-card h2{
+            font-size:2rem;
+            margin-bottom:15px;
         }
-        .price {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #34d399;
-            margin-bottom: 25px;
+
+        .price{
+            color:#34d399;
+            font-size:2rem;
+            font-weight:bold;
+            margin:20px 0;
         }
-        .buy-button {
-            display: inline-block;
-            background-color: #10b981;
-            color: white;
-            text-decoration: none;
-            padding: 14px 32px;
-            font-weight: bold;
-            border-radius: 8px;
-            font-size: 1.1rem;
+
+        .description{
+            color:#cbd5e1;
+            line-height:1.7;
+            margin-bottom:35px;
         }
-        .buy-button:hover {
-            background-color: #059669;
+
+        .buy-button{
+            display:inline-block;
+            background:#10b981;
+            color:#fff;
+            text-decoration:none;
+            padding:16px 38px;
+            border-radius:10px;
+            font-size:1.15rem;
+            font-weight:bold;
+            transition:.25s;
+        }
+
+        .buy-button:hover{
+            background:#059669;
+            transform:translateY(-2px);
         }
     </style>
 </head>
+
 <body>
-    <div class="store-container">
-        <h1>DOWNLOADOLOGY</h1>
-        <p class="subtitle">Premium digital assets, blueprints, and resources delivered instantly.</p>
-        <div class="product-card">
-            <h2>Make First $100 on the Web</h2>
-            <div class="price">$4.99</div>
-            <p class="description">
-                Stop overcomplicating online business. Discover the clear, actionable structural strategies required to build your audience, launch simple assets, and generate your very first $100 payout directly from your web projects.
-            </p>
-            
-            <a href="https://payhip.com/buy?link=4QgJm" class="buy-button">
-                Buy Ebook Now
-            </a>
-        </div>
+
+<div class="store-container">
+
+    <h1>DOWNLOADOLOGY</h1>
+
+    <p class="subtitle">
+        Premium digital assets, blueprints, and resources delivered instantly.
+    </p>
+
+    <div class="product-card">
+
+        <h2>Make Your First $100 on the Web</h2>
+
+        <div class="price">$4.99</div>
+
+        <p class="description">
+            Stop overcomplicating online business. Discover the clear,
+            actionable strategies required to build your audience,
+            launch simple digital products, and earn your first
+            $100 online.
+        </p>
+
+        <!-- Replace 4QgJm with YOUR Payhip product ID -->
+        <a href="https://payhip.com/b/4QgJm"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="buy-button">
+            Buy Ebook Now
+        </a>
+
     </div>
+
+</div>
+
 </body>
 </html>

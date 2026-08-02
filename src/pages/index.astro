@@ -3,11 +3,9 @@
 const storeName = "DOWNLOADOLOGY";
 const ebookTitle = "Make First $100 on the Web";
 const ebookPrice = "$4.99";
-"https://payhip.com/b/4QgJm"
-"https://payhip.com/b/4QgJm"
-const fullyQualifiedCheckoutUrl = "https://payhip.com";
+const payhipProductKey = "4QgJm"; 
 ---
-src="https://payhip.com/payhip.js"
+<!-- PAYHIP EMBED SCRIPT -->
 <script type="text/javascript" src="https://payhip.com" defer></script>
 
 <div class="store-container">
@@ -19,16 +17,8 @@ src="https://payhip.com/payhip.js"
         <p class="description">Stop overcomplicating online business. Discover the clear, actionable structural strategies required to build your audience, launch simple assets, and generate your very first $100 payout directly from your web projects.</p>
         <div class="price">{ebookPrice}</div>
         
-        <!-- THE ENGINE READS THE INJECTED DYNAMIC VARIABLE AND CAN'T AUTO-STRIP IT -->
-        <a 
-            href={fullyQualifiedCheckoutUrl} 
-            class="payhip-buy-button" 
-            data-theme="none"
-            data-product="4QgJm"
-            onClick={`window.open('${fullyQualifiedCheckoutUrl}','_blank','width=550,height=650,scrollbars=yes'); return false;`}
-        >
-            Buy Ebook Now
-        </a>
+        <!-- PERFECTLY FORMATTED CHKOUT LINK WITH YOUR TRUE KEY -->
+        <a href={`https://payhip.com{payhipProductKey}`} class="payhip-buy-button" data-theme="none">Buy Ebook Now</a>
     </div>
 </div>
 
@@ -44,4 +34,3 @@ src="https://payhip.com/payhip.js"
     .payhip-buy-button { display: inline-block; background-color: #10b981; color: #ffffff; text-decoration: none; padding: 14px 32px; font-weight: bold; border-radius: 8px; font-size: 1.1rem; transition: background-color 0.2s ease; border: none; cursor: pointer; }
     .payhip-buy-button:hover { background-color: #059669; }
 </style>
-

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOWNLOADOLOGY - Digital Store</title>
-    <script src="https://payhip.com/payhip.js"></script>
     <style>
         body {
             font-family: system-ui, sans-serif;
@@ -26,7 +25,6 @@
             color: #34d399;
             font-size: 2.5rem;
             margin-bottom: 10px;
-            letter-spacing: 1px;
         }
         .subtitle {
             color: #94a3b8;
@@ -38,7 +36,6 @@
             border: 1px solid #334155;
             border-radius: 16px;
             padding: 30px;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
         }
         h2 {
             font-size: 1.8rem;
@@ -57,20 +54,17 @@
             color: #34d399;
             margin-bottom: 25px;
         }
-        .payhip-buy-button {
+        .buy-button {
             display: inline-block;
             background-color: #10b981;
-            color: #ffffff !important;
+            color: white;
             text-decoration: none;
             padding: 14px 32px;
             font-weight: bold;
             border-radius: 8px;
             font-size: 1.1rem;
-            transition: background-color 0.2s ease;
-            border: none;
-            cursor: pointer;
         }
-        .payhip-buy-button:hover {
+        .buy-button:hover {
             background-color: #059669;
         }
     </style>
@@ -85,14 +79,8 @@
             <p class="description">
                 Stop overcomplicating online business. Discover the clear, actionable structural strategies required to build your audience, launch simple assets, and generate your very first $100 payout directly from your web projects.
             </p>
-
-            <!-- Direct checkout link (most reliable on mobile & other browsers) -->
-            <a
-                href="https://payhip.com/buy?link=4QgJm"
-                class="payhip-buy-button"
-                data-theme="none"
-                data-product="4QgJm"
-            >
+            
+            <a href="https://payhip.com/buy?link=4QgJm" class="buy-button">
                 Buy Ebook Now
             </a>
         </div>

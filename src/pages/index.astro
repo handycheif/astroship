@@ -1,125 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOWNLOADOLOGY - Digital Store</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOWNLOADOLOGY - Digital Store</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        body{
-            font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-            background:#0f172a;
-            color:#f8fafc;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            min-height:100vh;
-            padding:20px;
-        }
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#0f172a;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
 
-        .store-container{
-            width:100%;
-            max-width:650px;
-        }
+.container{
+    max-width:650px;
+    width:100%;
+}
 
-        h1{
-            text-align:center;
-            color:#34d399;
-            font-size:2.7rem;
-            margin-bottom:10px;
-        }
+.card{
+    background:#1e293b;
+    border-radius:15px;
+    padding:40px;
+    text-align:center;
+    border:1px solid #334155;
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
 
-        .subtitle{
-            text-align:center;
-            color:#94a3b8;
-            margin-bottom:35px;
-            font-size:1.1rem;
-        }
+h1{
+    color:#34d399;
+    margin-bottom:10px;
+}
 
-        .product-card{
-            background:#1e293b;
-            border:1px solid #334155;
-            border-radius:18px;
-            padding:35px;
-            text-align:center;
-            box-shadow:0 10px 25px rgba(0,0,0,.35);
-        }
+.subtitle{
+    color:#94a3b8;
+    margin-bottom:30px;
+}
 
-        .product-card h2{
-            font-size:2rem;
-            margin-bottom:15px;
-        }
+h2{
+    margin-bottom:15px;
+}
 
-        .price{
-            color:#34d399;
-            font-size:2rem;
-            font-weight:bold;
-            margin:20px 0;
-        }
+.price{
+    color:#22c55e;
+    font-size:2rem;
+    font-weight:bold;
+    margin:20px 0;
+}
 
-        .description{
-            color:#cbd5e1;
-            line-height:1.7;
-            margin-bottom:35px;
-        }
+.description{
+    color:#cbd5e1;
+    line-height:1.7;
+    margin-bottom:30px;
+}
 
-        .buy-button{
-            display:inline-block;
-            background:#10b981;
-            color:#fff;
-            text-decoration:none;
-            padding:16px 38px;
-            border-radius:10px;
-            font-size:1.15rem;
-            font-weight:bold;
-            transition:.25s;
-        }
+.buy-button{
+    display:inline-block;
+    background:#10b981;
+    color:#fff;
+    text-decoration:none;
+    padding:16px 40px;
+    border-radius:8px;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
 
-        .buy-button:hover{
-            background:#059669;
-            transform:translateY(-2px);
-        }
-    </style>
+.buy-button:hover{
+    background:#059669;
+}
+</style>
+
 </head>
-
 <body>
 
-<div class="store-container">
+<div class="container">
 
-    <h1>DOWNLOADOLOGY</h1>
+<div class="card">
 
-    <p class="subtitle">
-        Premium digital assets, blueprints, and resources delivered instantly.
-    </p>
+<h1>DOWNLOADOLOGY</h1>
 
-    <div class="product-card">
+<p class="subtitle">
+Premium digital assets delivered instantly.
+</p>
 
-        <h2>Make Your First $100 on the Web</h2>
+<h2>Make Your First $100 on the Web</h2>
 
-        <div class="price">$4.99</div>
+<div class="price">$4.99</div>
 
-        <p class="description">
-            Stop overcomplicating online business. Discover the clear,
-            actionable strategies required to build your audience,
-            launch simple digital products, and earn your first
-            $100 online.
-        </p>
+<p class="description">
+Learn practical strategies for launching digital products,
+building an audience, and earning your first online income.
+</p>
 
-        <!-- Replace 4QgJm with YOUR Payhip product ID -->
-        <a href="https://payhip.com/b/4QgJm"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="buy-button">
-            Buy Ebook Now
-        </a>
+<a
+class="buy-button"
+href="https://payhip.com/buy?link=4QgJm"
+target="_blank"
+rel="noopener noreferrer">
+Buy Ebook Now
+</a>
 
-    </div>
+</div>
 
 </div>
 

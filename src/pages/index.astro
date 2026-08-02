@@ -6,7 +6,7 @@ const ebookPrice = "$4.99";
 const payhipProductKey = "XXXXX"; // Replace with your actual Payhip product key (e.g., bK2L)
 ---
 <!-- PAYHIP EMBED SCRIPT -->
-<script type="text/javascript" src="https://payhip.com" defer></script>
+<script type="text/javascript" src="https://payhip.com/payhip.js" defer></script>
 
 <div class="store-container">
     <h1>{storeName}</h1>
@@ -17,6 +17,7 @@ const payhipProductKey = "XXXXX"; // Replace with your actual Payhip product key
         <p class="description">Stop overcomplicating online business. Discover the clear, actionable structural strategies required to build your audience, launch simple assets, and generate your very first $100 payout directly from your web projects.</p>
         <div class="price">{ebookPrice}</div>
         
+        <!-- PERFECTLY FORMATTED ASTRO PAYHIP LINK -->
         <a href={`https://payhip.com{payhipProductKey}`} class="payhip-buy-button" data-theme="none">Buy Ebook Now</a>
     </div>
 </div>

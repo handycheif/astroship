@@ -6,7 +6,7 @@ const ebookPrice = "$4.99";
 const payhipProductKey = "4QgJm"; 
 ---
 <!-- PAYHIP EMBED SCRIPT -->
-<script type="text/javascript" src="https://payhip.com/payhip.js" defer></script>
+<script type="text/javascript" src="https://payhip.com" defer></script>
 
 <div class="store-container">
     <h1>{storeName}</h1>
@@ -17,8 +17,15 @@ const payhipProductKey = "4QgJm";
         <p class="description">Stop overcomplicating online business. Discover the clear, actionable structural strategies required to build your audience, launch simple assets, and generate your very first $100 payout directly from your web projects.</p>
         <div class="price">{ebookPrice}</div>
         
-        <!-- FIXED CHKOUT STRING INTERPOLATION AND INTERFACE ROUTE -->
-        <a href={`https://payhip.com{payhipProductKey}`} class="payhip-buy-button" data-theme="none">Buy Ebook Now</a>
+        <!-- FIXED: ADDED THE MANDATORY DATA-PRODUCT IDENTIFIER -->
+        <a 
+            href={`https://payhip.com{payhipProductKey}`} 
+            class="payhip-buy-button" 
+            data-theme="none"
+            data-product={payhipProductKey}
+        >
+            Buy Ebook Now
+        </a>
     </div>
 </div>
 

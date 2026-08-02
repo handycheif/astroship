@@ -1,13 +1,10 @@
-e main problem is the attribute name on the buy button.
-Payhip’s embed code expects data-product="..." (not data-id="..."). With the wrong attribute, the Payhip script doesn’t recognize the button and the overlay/checkout doesn’t work properly.
-Fixed version
-HTML<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOWNLOADOLOGY - Digital Store</title>
-    <script type="text/javascript" src="https://payhip.com/payhip.js"></script>
+    <script src="https://payhip.com/payhip.js"></script>
     <style>
         body {
             font-family: system-ui, sans-serif;
@@ -63,7 +60,7 @@ HTML<!DOCTYPE html>
         .payhip-buy-button {
             display: inline-block;
             background-color: #10b981;
-            color: #ffffff;
+            color: #ffffff !important;
             text-decoration: none;
             padding: 14px 32px;
             font-weight: bold;
@@ -88,8 +85,10 @@ HTML<!DOCTYPE html>
             <p class="description">
                 Stop overcomplicating online business. Discover the clear, actionable structural strategies required to build your audience, launch simple assets, and generate your very first $100 payout directly from your web projects.
             </p>
+
+            <!-- Direct checkout link (most reliable on mobile & other browsers) -->
             <a
-                href="https://payhip.com/b/4QgJm"
+                href="https://payhip.com/buy?link=4QgJm"
                 class="payhip-buy-button"
                 data-theme="none"
                 data-product="4QgJm"

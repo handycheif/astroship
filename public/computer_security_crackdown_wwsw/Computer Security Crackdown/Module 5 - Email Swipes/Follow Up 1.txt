@@ -1,0 +1,27 @@
+SUBJECT:
+6 tips to keep your home computer safe
+
+BODY:
+
+To make your online experience truly secure and keep those identity thieves at bay, read on for some lesser-known tips.
+
+1. Check Your Firewall
+Checking your firewall sounds complicated, but it really isn’t. If you own a Windows-based system, just go to your control panel and type “firewall” in the search box. If your firewall is “on” or “connected,” then you’re good to go. If you own a Mac, click the Apple icon on your toolbar, go to “system preferences,” then “security,” then “firewall.” Making sure you have a firewall in place can go a long way toward keeping criminals out. Make sure that you share some of your folders only on the home network. If you don’t really need your files to be visible to other machines, disable file and media  sharing completely.
+
+2. Back Up Your Data
+Backing up your data protects you in the event of a computer crash or electrical outage or surge, like a lightning storm might produce. It also helps if you fall prey to the newer type of ransomware, which encrypts your sensitive data. You can do your back-up manually by transferring important documents to an external hard drive, or using a service like Carbonite. If you don’t have a significant amount of data to store, use a service like Dropbox, where you get 2GB of storage for free. Kaspersky PURE has backup functionality as well, including Dropbox integration.
+
+3. Stay Away From Rogue Websites
+Spotting a rogue website can be difficult, but there are a few things you can do to hone your skills. Look for a green lock in the address bar and the code prefix “https://” at the beginning of the URL while visiting banking sites, entering your credit card data or accessing your web mail. Be careful when shopping at a website that ships items from overseas, and don’t click on links sent to you in email messages, go directly to the website itself instead.
+
+4. Avoid Deals That Are Too Good to Be True
+If you see a deal for 90% off The Beatles Collection CD, it very well could be a knock off. Even worse, some sites are known to lure customers in with an amazing deal, and once they have your credit card information they’re never to be heard from again – your identity may be compromised and there’s not even a product to show for it. The simple rule of thumb here is: If it looks to good to be true then it probably is.
+
+5. Never Divulge Sensitive Information
+No matter what website you’re on be careful of the sensitive information you reveal. Although it’s pretty much common knowledge not to give out your social security number or credit card information unless you trust a website completely, you should be just as careful with your social media profiles as well. Revealing information as innocent as your pet’s name or mother’s maiden name could lead to identity theft, because you probably use the same data as the security question on some other website.
+
+6. Avoid Opening Unknown Emails
+Never open an email from an unknown or suspicious source, and definitely never open any attachments contained in them. You have to be careful of emails coming from people on your contact list as well, especially if the sender’s account has been hacked. If an email from someone you regularly communicate with has a suspicious link and unusual content, delete it and immediately alert this person that his or her account may have been compromised. This will help you prevent hacking and phishing scams where you may be a target.
+
+Stay Safe,
+YOUR NAME

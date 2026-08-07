@@ -49,7 +49,7 @@ h1 {
 .card {
     background: #1e293b;
     border-radius: 15px;
-    padding: 30px;
+    padding: 24px; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -63,25 +63,44 @@ h1 {
     border-color: #10b981;
 }
 
+.image-container {
+    width: 100%;
+    aspect-ratio: 3 / 4; 
+    background: #0f172a; 
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #334155;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem; 
     color: #f8fafc;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     line-height: 1.4;
 }
 
 .price {
     color: #22c55e;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .description {
     color: #cbd5e1;
     line-height: 1.6;
-    font-size: 0.95rem;
-    margin-bottom: 25px;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
     flex-grow: 1;
 }
 
@@ -102,6 +121,18 @@ h2 {
 .buy-button:hover {
     background: #059669;
 }
+
+/* RESPONSIVE BREAKPOINTS: Changes layout for tablets and phones */
+@media (max-width: 1024px) {
+    .products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)); 
+    }
+}
+@media (max-width: 640px) {
+    .products-grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr)); 
+    }
+}
 </style>
 
 <!-- Payhip Official App Embed Script -->
@@ -115,13 +146,12 @@ h2 {
     <p class="subtitle">Premium digital assets delivered instantly.</p>
 </div>
 
-<!-- All 4 ca<div class="products-grid">
+<div class="products-grid">
 
     <!-- PRODUCT 1 -->
     <div class="card">
         <div>
             <div class="image-container">
-                <!-- Replace the URL below with your Cloudflare link -->
                 <img src="https://your-cloudflare-domain.com" alt="Make Your First $100 on the Web" class="product-image">
             </div>
             <h2>Make Your First $100 on the Web</h2>
@@ -140,7 +170,6 @@ h2 {
     <div class="card">
         <div>
             <div class="image-container">
-                <!-- Replace the URL below with your Cloudflare link -->
                 <img src="https://your-cloudflare-domain.com" alt="Ace Any Job Interview" class="product-image">
             </div>
             <h2>Ace Any Job Interview</h2> 
@@ -158,7 +187,6 @@ h2 {
     <div class="card">
         <div>
             <div class="image-container">
-                <!-- Replace the URL below with your Cloudflare link -->
                 <img src="https://your-cloudflare-domain.com" alt="Amazon Income Guide" class="product-image">
             </div>
             <h2>Amazon Income Guide</h2>
@@ -176,7 +204,6 @@ h2 {
     <div class="card">
         <div>
             <div class="image-container">
-                <!-- Replace the URL below with your Cloudflare link -->
                 <img src="https://your-cloudflare-domain.com" alt="Backbone of Computer Communications" class="product-image">
             </div>
             <h2>Backbone of Computer Communications</h2>
@@ -190,6 +217,7 @@ h2 {
         </a>
     </div>
 
-</div>
+</div> <!-- Closes products-grid -->
+
 </body>
 </html>

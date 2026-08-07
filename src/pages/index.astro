@@ -46,8 +46,6 @@ h1 {
     margin: 0 auto;
 }
 
-}
-
 .card {
     background: #1e293b;
     border-radius: 15px;
@@ -98,6 +96,7 @@ h2 {
     font-size: 16px;
     font-weight: bold;
     transition: .3s;
+    width: 100%;
 }
 
 .buy-button:hover {
@@ -116,6 +115,7 @@ h2 {
     <p class="subtitle">Premium digital assets delivered instantly.</p>
 </div>
 
+<!-- All 4 cards are now perfectly wrapped inside this container -->
 <div class="products-grid">
 
     <!-- PRODUCT 1 -->
@@ -128,7 +128,6 @@ h2 {
                 building an audience, and earning your first online income.
             </p>
         </div>
-        <!-- Live App Overlay Button -->
         <a class="buy-button payhip-buy-button" data-product="4QgJm" href="https://payhip.com/b/4QgJm" target="_blank">
             Buy Ebook Now
         </a>
@@ -137,47 +136,46 @@ h2 {
     <!-- PRODUCT 2 -->
     <div class="card">
         <div>
-                       <h2>Ace Any Job Interview </h2> 
+            <h2>Ace Any Job Interview</h2> 
             <div class="price">$1.99</div>
             <p class="description">
                 Learn the exact strategies, confidence tricks, and frameworks needed to stand out and land your dream job offer.
             </p>
-
-<a href="https://payhip.com/b/1NyBj" class="payhip-buy-button" data-theme="none" style="display: inline-block; padding: 12px 24px; background-color: #059669; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; font-family: sans-serif; text-align: center; width: 100%; box-sizing: border-box;">Buy Ebook Now</a>
-         </div>
+        </div>
+        <a class="buy-button payhip-buy-button" data-product="1NyBj" href="https://payhip.com/b/1NyBj" target="_blank">
+            Buy Ebook Now
+        </a>
     </div>
-</div>
-<!-- PRODUCT 3: Amazon Income Guide -->
-<div class="card">
-    <div>
-                <!-- PRODUCT 3: Amazon Income Guide -->
-        <div class="card">
-           <div>
-        <h2>Amazon Income Guide</h2>
-                <div class="price">$1.99</div>
-                <p class="description">
-                    Discover proven blueprints to build a profitable Amazon business, optimize your listings, and scale your passive income.
-                </p>
-            </div>
-            <a class="buy-button payhip-buy-button" data-product="q6oDh" href="https://payhip.com/b/q6oDh" target="_blank">
-                Buy Ebook Now
-            </a>
-        </div>
 
-        <!-- PRODUCT 4: Backbone of Computer Communications -->
-        <div class="card">
-            <div>
-                <h2>Backbone of Computer Communications</h2>
-                <div class="price">$1.99</div>
-                <p class="description">
-                    Master core networking infrastructure. Learn how high-capacity backbone systems reliably interconnect LANs, WANs, and global data centers.
-                </p>
-            </div>
-            <a class="buy-button payhip-buy-button" data-product="oHRij" href="https://payhip.com/b/oHRij" target="_blank">
-                Buy Ebook Now
-            </a>
+    <!-- PRODUCT 3 -->
+    <div class="card">
+        <div>
+            <h2>Amazon Income Guide</h2>
+            <div class="price">$1.99</div>
+            <p class="description">
+                Discover proven blueprints to build a profitable Amazon business, optimize your listings, and scale your passive income.
+            </p>
         </div>
-    </div> <!-- This closes your products-grid container -->
+        <a class="buy-button payhip-buy-button" data-product="q6oDh" href="https://payhip.com/b/q6oDh" target="_blank">
+            Buy Ebook Now
+        </a>
+    </div>
+
+    <!-- PRODUCT 4 -->
+    <div class="card">
+        <div>
+            <h2>Backbone of Computer Communications</h2>
+            <div class="price">$1.99</div>
+            <p class="description">
+                Master core networking infrastructure. Learn how high-capacity backbone systems reliably interconnect LANs, WANs, and global data centers.
+            </p>
+        </div>
+        <a class="buy-button payhip-buy-button" data-product="oHRij" href="https://payhip.com/b/oHRij" target="_blank">
+            Buy Ebook Now
+        </a>
+    </div>
+
+</div> 
 
 </body>
 </html>

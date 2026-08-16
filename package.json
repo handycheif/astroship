@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "pnpm install --no-frozen-lockfile && astro build"
+    "build": "pnpm install --no-frozen-lockfile && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },

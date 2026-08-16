@@ -63,27 +63,48 @@ h1 {
     border-color: #10b981;
 }
 
+/* make the whole card tiny */
+.product-card, .card {
+    padding: 8px !important;
+    max-width: 110px !important;
+    min-width: 110px !important;
+}
+
+/* shrink the image to 40x60 */
 .image-container {
-    width: 100px !important;
-    height: 150px !important;
-    min-width: 100px !important;
-    max-width: 100px !important;
-    min-height: 150px !important;
-    max-height: 150px !important;
-    background: #0f172a;
-    border-radius: 8px;
-    margin: 0 auto 20px auto;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #334155;
+    width: 40px !important;
+    height: 60px !important;
+    margin: 0 auto 6px auto !important;
+    border-radius: 4px !important;
 }
 .image-container img {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
-    display: block;
+}
+
+/* shrink text so card is short */
+.product-card h3, .card h3, .card h2 {
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+    margin: 4px 0 !important;
+}
+.product-card p, .card p {
+    display: none !important; /* hide long description to fit 12 */
+}
+.price, .text-green-500 {
+    font-size: 12px !important;
+    margin: 4px 0 !important;
+}
+.product-card button, .card button, .card a {
+    padding: 4px 6px !important;
+    font-size: 10px !important;
+}
+
+/* grid to get 6 across = 12 in 2 rows */
+.grid {
+    grid-template-columns: repeat(6, 1fr) !important;
+    gap: 10px !important;
 }
 
 .product-image {

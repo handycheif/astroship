@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOWNLOADOLOGY - Digital Store</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f172a;
+    color: #fff;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+}
+
+h1 {
+    color: #34d399;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    color: #94a3b8;
+    font-size: 1.2rem;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.card {
+    background: #1e293b;
+    border-radius: 15px;
+    padding: 24px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #334155;
+    box-shadow: 0 10px 30px rgba(0,0,0,.3);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #10b981;
+}
+
+.image-container {
+    width: 100%;
+    aspect-ratio: 3 / 4; 
+    background: #0f172a; 
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #334155;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+h2 {
+    font-size: 1.3rem; 
+    color: #f8fafc;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.price {
+    color: #22c55e;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.description {
+    color: #cbd5e1;
+    line-height: 1.6;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.buy-button {
+    display: block;
+    text-align: center;
+    background: #10b981;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: .3s;
+    width: 100%;
+}
+
+.buy-button:hover {
+    background: #059669;
+}
+
+/* RESPONSIVE BREAKPOINTS: Changes layout for tablets and phones */
+@media (max-width: 1024px) {
+    .products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)); 
+    }
+}
+@media (max-width: 640px) {
+    .products-grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr)); 
+    }
+}
+</style>
+
+<!-- Payhip Official App Embed Script -->
+<script type="text/javascript" src="https://payhip.com" async></script>
+
+</head>
+<body>
+
+<div class="header">
+    <h1>DOWNLOADOLOGY</h1>
+    <p class="subtitle">Premium digital assets delivered instantly.</p>
+</div>
+
+<div class="products-grid">
+
+ <!-- PRODUCT 1 -->
+<div class="card">
+    <div>
+        <div class="image-container">
+           <img src="https://pub-3c6da3fdbc4245f794e46f84f6f0147f.r2.dev/1036-400x300.jpg" alt="Make Your First $100 on the Web" class="product-image">
+        </div>
+        <h2>Make Your First $100 on the Web</h2>
+        <div class="price">$4.99</div>
+        <p class="description">
+            Learn practical strategies for launching digital products,
+            building an audience, and earning your first online income.
+        </p>
+    </div>
+    <a href="https://payhip.com/b/4QgJm" target="_blank" style="display: inline-block; background: #0070f3; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+        Buy Ebook Now
+    </a>
+</div>
+  
+<!-- PRODUCT 2 -->
+<div class="card">
+    <div>
+        <div class="image-container">
+            <img src="https://your-cloudflare-domain.com" alt="Ace Any Job Interview" class="product-image">
+        </div>
+        <h2>Ace Any Job Interview</h2> 
+        <div class="price">$1.99</div>
+        <p class="description">
+            Learn the exact strategies, confidence tricks, and frameworks needed to stand out and land your dream job offer.
+        </p>
+    </div>
+    <a class="buy-button payhip-buy-button" data-product="1NyBj" href="https://payhip.com" target="_blank">
+        Buy Ebook Now
+    </a>
+</div>
+
+<!-- PRODUCT 3 -->
+<div class="card">
+    <div>
+        <div class="image-container">
+            <img src="https://your-cloudflare-domain.com" alt="Amazon Income Guide" class="product-image">
+        </div>
+        <h2>Amazon Income Guide</h2>
+        <div class="price">$1.99</div>
+        <p class="description">
+            Discover proven blueprints to build a profitable Amazon business, optimize your listings, and scale your passive income.
+        </p>
+    </div>
+    <a class="buy-button payhip-buy-button" data-product="q6oDh" href="https://payhip.com" target="_blank">
+        Buy Ebook Now
+    </a>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="card">
+    <div>
+        <div class="image-container">
+            <img src="https://your-cloudflare-domain.com" alt="Backbone of Computer Communications" class="product-image">
+        </div>
+        <h2>Backbone of Computer Communications</h2>
+        <div class="price">$1.99</div>
+        <p class="description">
+            Master core networking infrastructure. Learn how high-capacity backbone systems reliably interconnect LANs, WANs, and global data centers.
+        </p>
+    </div>
+    <a class="buy-button payhip-buy-button" data-product="oHRij" href="https://payhip.com" target="_blank">
+        Buy Ebook Now
+    </a>
+</div>
+
+</div> <!-- Closes products-grid -->
+
+</body>
+</html>
+
+
+
+
+
+
+
+

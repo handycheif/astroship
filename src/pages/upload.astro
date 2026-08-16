@@ -1,0 +1,59 @@
+---
+// src/pages/upload.astro
+import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
+
+let uploadStatus = "";
+
+if (Astro.request.method === "POST") {
+  try {
+    const formData = await Astro.request.formData();
+    const file = formData.get("picture") as File;
+
+    if (file && file.size > 0) {
+      const s3 = new S3Client({
+        region: "auto",
+        endpoint: import.meta.env.R2_ENDPOINT,
+        credentials: {
+          accessKeyId: import.meta.env.R2_ACCESS_KEY_ID,
+          secretAccessKey: import.meta.env.R2_SECRET_ACCESS_KEY,
+        },
+      });
+
+      const arrayBuffer = await file.arrayBuffer();
+      const buffer = Buffer.from(arrayBuffer);
+
+      const uploadParams = {
+        Bucket: "my-app-pictures",
+        Key: `${Date.now()}-${file.name}`,
+        Body: buffer,
+        ContentType: file.type,
+      };
+
+      await s3.send(new PutObjectCommand(uploadParams));
+      uploadStatus = "Success! Your picture was uploaded to Cloudflare.";
+    } else {
+      uploadStatus = "Please select a valid image file.";
+    }
+  } catch (error) {
+    console.error(error);
+    uploadStatus = "Upload failed. Double-check your .env file keys.";
+  }
+}
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Upload Pictures</title>
+  </head>
+  <body>
+    <h1>Upload a Picture to Cloudflare R2</h1>
+    
+    {uploadStatus && <p style="color: green; font-weight: bold;">{uploadStatus}</p>}
+
+    <form method="POST" enctype="multipart/form-data">
+      <input type="file" name="picture" accept="image/*" required />
+      <button type="submit">Upload Image</button>
+    </form>
+  </body>
+</html>

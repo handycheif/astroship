@@ -113,12 +113,14 @@ h1 {
     object-fit: cover; 
 }
 
-h2 {
-    font-size: 1.3rem; 
-    color: #f8fafc;
-    margin-bottom: 10px;
-    line-height: 1.4;
-}
+.grid { display:grid !important; grid-template-columns:repeat(6,110px) !important; gap:12px !important; justify-content:start !important; }
+.card,.product-card{width:110px !important; min-width:110px !important; padding:8px !important; margin:0 !important;}
+.image-container{width:40px !important; height:60px !important; margin:0 auto 6px auto !important; overflow:hidden !important; font-size:0 !important;}
+.image-container img,.product-image{width:100% !important; height:100% !important; object-fit:cover !important; display:block !important;}
+h2{font-size:10px !important; line-height:1.2 !important; white-space:nowrap !important; overflow:hidden !important; text-overflow:ellipsis !important; margin:4px 0 !important;}
+.price{font-size:11px !important; margin:4px 0 !important;}
+.description{display:none !important;}
+.card button{font-size:9px !important; padding:3px 6px !important;}
 
 .price {
     color: #22c55e;
